@@ -7,13 +7,13 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: jahr
+- type: number
+  name: jahr
   label: Jahr
-  type: datetime
-  hidden: false
-  default: ''
   config:
-    date_format: YYYY
+    min: '1950'
+    max: '2050'
+    step: '1'
 - type: text
   name: groesse
   label: Größe
