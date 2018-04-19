@@ -1,1 +1,8 @@
 theme: jekyll-theme-cayman
+
+collections:
+  posts:
+    output: false
+  projects:
+    output: true
+    permalink: "/projects/:path/"
