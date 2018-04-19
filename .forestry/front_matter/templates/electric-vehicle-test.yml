@@ -7,28 +7,30 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: date
-  label: Date
+- name: jahr
+  label: Jahr
   type: datetime
   hidden: false
   default: ''
-- name: banner_image
-  label: Banner image
-  type: file
-  hidden: false
-  default: ''
-- name: sub_heading
-  label: Sub heading
-  type: text
-  hidden: false
-  default: ''
-- name: tags
-  label: Tags
-  type: tag_list
-  hidden: false
-  default: ''
-- name: slug
-  label: Slug
-  type: text
-  hidden: false
-  default: ''
+  config:
+    date_format: YYYY
+- type: text
+  name: groesse
+  label: Größe
+- type: text
+  name: art
+  label: Art
+- type: text
+  name: leistung
+  label: Leistung
+- type: text
+  name: nutzung
+  label: Nutzung
+- type: file
+  label: Front Image
+  name: front_image
+  description: Bild für die Projektübersicht
+- type: image_gallery
+  name: gallery
+  label: Gallery
+  description: hier alle Bilder für die Projektseite hochladen
